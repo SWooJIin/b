@@ -7,6 +7,7 @@ export const TodoDispatchContext= createContext();
 
 function todoReducer(state, action){
     let nextState;
+    
     switch(action.type){
         case "INIT":
             return action.data;
